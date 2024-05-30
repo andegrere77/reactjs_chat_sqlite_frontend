@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-chatroom{
+  width: 450px;
+}
+
+.card-chatrooms{
+  width: 450px;
+  background-color: #E0E0E0;
+}
+
+.card-form-chatrooms{
+  width: auto;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.card-chatrooms:hover{
+  background-color: rgb(215, 255, 255);
+}
+
+#card-chat{
+  width: auto;
+  height: 600px;
+}
+
+@media (min-width: 900px) {
+  #card-chat {
+    width: 600px;
+  }
+}
+
+#link{
+  text-decoration: none;
+  color:rgb(210, 210, 210);
+  font-weight: bold;
+}
+
+#messages-dashboard{
+  overflow-y: auto;
+}
+
+.message-user{
+  position: relative;
+  width: 300px;
+  text-align: left;
+  background-color: #85dfae;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.message-user:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #85dfae transparent transparent;
+
+}
+
+.message-other{
+  position: relative;
+  width: 300px;
+  text-align: left;
+  background-color: #e6e6e6;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.message-other:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #e6e6e6 transparent transparent;
+
+}
+
+.date-text{
+  font-size: 12px;
+}
+
+.form-div{
+  width: auto;
+}
+
+.logout:hover{
+  cursor: pointer;
+}
+
+#exit{
+  font-size: 16px;
+  color: #6d6d6e;
+}
+
+#chatrooms{
+  width: 90%;
+}
